@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./task1.css" />
+    
+    <title>TASK 1</title>
+  </head>
+  <body>
+    <!-- task-1 -->
+    <h1>TASK 1</h1>
+    <p>1.Given number is positive or not</p>
+    <div class="row">
+      <div class="col">
+        <input
+          type="number"
+          class="form-control"
+          id="inputbox"
+          name="inputnumber"
+          placeholder="Enter your number"
+        />
+      </div>
+
+      <p id="res">your results!!!</p>
+
+      <button type="button" id="btn btn-green" onclick="pos()">Check</button>
+    </div>
+
+    <!-- greatestnum -->
+    <div class="row">
+      <div class="row">
+        <p>2.Find the greatest number</p>
+        Enter your number:<input
+          type="number"
+          class="form-control"
+          id="number1"
+          name="number1"
+        />
+
+        Enter your number:
+        <input type="number" class="form-control" id="number2" name="number2" />
+      </div>
+
+      <p id="para"></p>
+
+      <button type="button" id="Check" onclick="greatest()">Result</button>
+    </div>
+
+    <!-- smallest number -->
+
+    <div class="row">
+      <div class="row">
+        <p>3.Find the smallest number</p>
+        Enter your number:
+        <input type="number" class="form-control" id="num1" name="number1" />
+
+        Enter your number:
+        <input type="number" class="form-control" id="num2" name="number2" />
+
+        Enter your number:
+        <input type="number" class="form-control" id="num3" name="number3" />
+      </div>
+
+      <p id="small"></p>
+      <div>
+        <button type="button" id="btn" onclick="small()">Result</button>
+      </div>
+    </div>
+
+    <!-- odd even number -->
+    <div class="row">
+      <p>4.Odd or even</p>
+      <div class="row">
+        <input
+          type="number"
+          class="form-control"
+          id="odd-even"
+          name="odd-even"
+          placeholder="Enter your number"
+        />
+      </div>
+      <p id="para2"></p>
+
+      <button type="button" id="enter" onclick="math()">Enter</button>
+    </div>
+    <hr />
+
+    <!-- task -2 -->
+    <h1>TASK 2</h1>
+    <div>
+      <label for="">1-Enter the Bill Amount</label>
+      <input type="text" class="bill" id="bill" />
+      <button class="bill2" onclick="billAmount()">Check</button>
+      <p id="bill3"></p>
+    </div>
+
+    <div>
+      <label for="">2-Enter the Salary</label>
+      <input type="text" class="salary" id="salary" />
+      <label for="">Enter your Experience</label>
+      <input type="number" class="Experience" id="Experience" />
+      <button class="hike" onclick="hike()">Check</button>
+      <p id="hikeCheck"></p>
+    </div>
+
+    <div>
+      <label for="">3-Enter the bill Amount</label>
+      <input type="text" class="Amount" id="Amt" />
+      <label for="">Payment Mode</label>
+      <select name="cash" id="cash" class="Payment">
+        <option value="cash">Cash</option>
+        <option value="card">Card</option>
+      </select>
+      <button class="click" onclick="serviceCharges()">Check</button>
+      <p id="gst"></p>
+    </div>
+
+    <div>
+      <label for="">4-Total no.of days</label>
+      <input type="text" class="days" />
+      <label for="">Days attended</label>
+      <input type="text" class="dayAttended" />
+      <label for="">Medical Leave</label>
+      <select name="yes" id="yes" class="medicalLeave">
+        <option value="Yes">YES</option>
+        <option value="No">No</option>
+      </select>
+      <button class="Check1" onclick="medicalLeave()">Check</button>
+      <p class="Medical"></p>
+    </div>
+
+    <div>
+      <label for="">5-Enter the mark</label>
+      <input type="text" class="grade" id="grade" />
+      <button class="gradeSystem" onclick="gradeSystem()">Check</button>
+      <p id="system"></p>
+    </div>
+    <hr />
+    <!-- direction -->
+    <h1>TASK 3</h1>
+    <h1>Traffic Signal</h1>
+     <div class="wr signal"></div>
+     <div class="wl signal"></div>
+     <div class="El signal" ></div>
+     <div class="Er signal" ></div>
+     <div class="Nl signal"></div>
+     <div class="Nr signal"></div>
+     <div class="Sr signal"></div>
+     <div class="Sl signal"></div>
+     <div class="container">
+     <button class="north">NORTH</button>
+     <button class="east">EAST</button>
+     <button class="south">SOUTH</button>
+     <button class="west">WEST</button>
+   </div>
+    <hr />
+
+    <!-- booking slot -->
+    <h1>Task 4</h1>
+    <h1>booking slot</h1>
+    <div id="car_parking_system">
+    <div id="car_parking_area" class="car_parking_area">
+      <div id="slot1" isBooked="false" class="slot empty"><p>slot1</p></div>
+      <div id="slot2" isBooked="false" class="slot empty"><p>slot2</p></div>
+      <div id="slot3" isBooked="false" class="slot empty"><p>slot3</p></div>
+      <div id="slot4" isBooked="false" class="slot empty"><p>slot4</p></div>
+      <div id="slot5" isBooked="false" class="slot empty"><p>slot5</p></div>
+    </div>
+    <div class="user">
+      <p>
+        <label for="car_number">Car number :</label>
+        <input type="text" id="car_number" name="car_number"  required> 
+      </p>
+      <p>
+        <label for="slot_selection">Select your slot</label>
+        <select id="slot_selection">
+         <option>select</option>
+         <option>slot-1</option> 
+         <option>slot-2</option>
+         <option>slot-3</option>
+         <option>slot-4</option>
+         <option>slot-5</option>
+        </select>
+      </p>
+      <p id="msgShow">
+        
+      </p>
+
+      <button type="button" id="book" onclick="carBooking()">Book</button>
+      <button type="button" id="reset" onclick="removeSlot()">Remove</button>
+
+    </div>
+  </div>
+    
+    <hr />
+
+    <!-- reverse the number -->
+    <div class="row">
+    <p>1.Reverse the number</p>
+      <input
+        type="number"
+        id="reverse"
+        name="rev"
+        placeholder="Enter the number"
+      />
+    </div>
+    <button type="button" onclick="revert()">Enter</button>
+    <hr>
+
+    <!-- chatbot -->
+    <h1>Task 5</h1>
+    <h1>chatbot</h1>
+    <div class="col">
+      <label for="">Hello this is chittibot, How may i help you today!!!</label>
+      <p id="enter">
+        Please enter the button:
+       <div> <button id="check" onclick="chatbot('check')">
+          Check the balance Amount
+        </button>
+        <p id="balanceDisplay"></p>
+      </div>
+       <p><button id="plans" onclick="chatbot('plans')">Recharge Plans</button></p>
+        <p id="planDisplay">
+        </p>
+      </div>
+
+        <button id="pay" onclick="chatbot('pay')">Recharge</button>
+        <p id="payDisplay"></p>
+      </p>
+
+      <p id="invalid"></p>
+    </div>
+
+    <script src="./task1.js"></script>
+  </body>
+  
+</html>
